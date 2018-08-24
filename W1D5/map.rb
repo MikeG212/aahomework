@@ -9,7 +9,7 @@ class Map
   end
 
   def get(key)
-
+    @map.each { |k,v| return v if k == key }
   end
 
   def delete(key)
