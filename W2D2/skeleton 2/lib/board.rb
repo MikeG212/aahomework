@@ -15,7 +15,6 @@ class Board
         cup << :stone
       end
     end
-    # helper method to #initialize every non-store cup with four stones each
   end
 
   def valid_move?(start_pos)
@@ -28,7 +27,7 @@ class Board
     @cups[start_pos] = []
     num_of_stones.times do |idx|
       new_idx = start_pos + 1 + idx
-      # next if (current_player_name == @player1 && new_idx == 0) || (current_player_name == @player2 && new_idx == 13) 
+      # next if (current_player_name == @player1 && new_idx == 0) || (current_player_name == @player2 && new_idx == 13)
       @cups[new_idx] << :stone
     end
     render
