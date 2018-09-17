@@ -1,0 +1,55 @@
+/* PHASE 1: Header */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: #eee;
+}
+/*
+got from google */
+
+.header {
+  background: #f00;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.header a {
+  display: block;
+  padding: 10px 20px;
+}
+
+/* paddings large click targets */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 900px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/* justify your logo <h1> to the left, and the <ul> list of links to the right. To get the individual <li> next to each other you'll want to again use flex. */
+
+.header-logo {
+  border-right: 1px solid #ccc;
+  font-weight: 700;
+}
+
+.header-logo:hover {
+  background: #000;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list > li {
+  border-left: 1px solid #ccc;
+}
+
+.header-list > li:hover {
+  background: #000;
+}
+/* hover states, important and gratifying feedback for the user. */
